@@ -1,0 +1,22 @@
+#map-canvas {
+        width: 500px;
+        height: 400px;
+      }
+
+  .navbar-brand{font-family: 'Lobster', cursive;
+  font-size: 40px;
+  }
+
+  #owl-demo .item{
+  margin: 3px;
+}
+#owl-demo .item img{
+  display: block;
+  width: 100%;
+  height: auto;
+}
+
+.col-md-8{
+  padding-left: 20px;
+  margin-left: 20px;
+}
