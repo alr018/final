@@ -33,6 +33,11 @@ footer {
     left: 0;
   }
 
+  #sidebar{
+    margin-left:20px;
+    padding-left: 20px;
+  }
+
   .row-offcanvas-right
   .sidebar-offcanvas {
     right: -50%; /* 6 columns */
