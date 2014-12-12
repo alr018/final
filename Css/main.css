@@ -38,3 +38,15 @@
 #sidebar {
   display:block;
 }
+
+body {
+  margin: 0 auto;
+  padding: 0;
+  font-family: Arial, sans-serif;
+  font-size: 13px;
+  /*background-image: url("../img/banner-swu-new2.jpg");
+  background-size: auto 900px;*/
+  background-color: #FFFFFC;
+
+
+}
