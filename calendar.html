@@ -1,107 +1,143 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
   <head>
-  <meta charset="utf-8">
-        <meta http-equiv="X-UA-Compatible" content="IE=edge">
-        <meta name="viewport" content="width=device-width, initial-scale=1">
-        <meta name="description" content="Local Bands of San Diego http://www.le.ac.uk/">
-        <meta name="author" content="Alfredo Rodriguez, Casey ">
-        <link rel="icon" href="./images/icon.png">
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="">
+    <meta name="author" content="">
+    <link rel="icon" href="../../favicon.ico">
 
-        <title>Calendar</title>
-        <link href="./css/main.css" rel="stylesheet">
-        
-        <!-- Bootstrap core CSS -->
-        <link href="./css/bootstrap.min.css" rel="stylesheet">
-        <link href="./css/support.css" rel="stylesheet">
+    <title>LocalMusic</title>
 
-        <link href='http://fonts.googleapis.com/css?family=Lobster' rel='stylesheet' type='text/css'>
-  
+    <!-- Bootstrap core CSS -->
+    <link href="./css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- Custom styles for this template -->
+    
+    <link href="./css/offcanvas.css" rel="stylesheet">
+    <link href="./yamm/yamm.css" rel="stylesheet">
+    <link href="./css/offcanvas.css" rel="stylesheet">
+
+    <!-- Just for debugging purposes. Don't actually copy these 2 lines! -->
+    <!--[if lt IE 9]><script src="../../assets/js/ie8-responsive-file-warning.js"></script><![endif]-->
+    <script src="./js/ie-emulation-modes-warning.js"></script>
+
+    <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
+    <!--[if lt IE 9]>
+      <script src="https://oss.maxcdn.com/html5shiv/3.7.2/html5shiv.min.js"></script>
+      <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
+    <![endif]-->
   </head>
+
   <body>
-  <nav class="navbar navbar-default" role="navigation">
-  <div class="container-fluid">
-    <!-- Brand and toggle get grouped for better mobile display -->
-    <div class="navbar-header">
-      <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
-        <span class="sr-only">Toggle navigation</span>
-        <span class="icon-bar"></span>
-        <span class="icon-bar"></span>
-        <span class="icon-bar"></span>
-      </button>
-      <a class="navbar-brand" href="#">Brand</a>
+   <div class="navbar yamm navbar-default navbar">
+      <div class="container-fluid">
+        <div class="navbar-header">
+          <button type="button" data-toggle="collapse" data-target="#navbar-collapse-1" class="navbar-toggle"><span class="icon-bar"></span><span class="icon-bar"></span><span class="icon-bar"></span></button><a href="#" class="navbar-brand">Local Music</a>
+        </div>
+        <div id="navbar-collapse-1" class="navbar-collapse collapse">
+          <ul class="nav navbar-nav">
+            <!-- Classic list -->
+            <li class="dropdown"><a href="#" data-toggle="dropdown" class="dropdown-toggle">Artists<b class="caret"></b></a>
+              <ul class="dropdown-menu">
+                <li>
+                  <!-- Content container to add padding -->
+                  <div class="yamm-content">
+                    <div class="row">
+
+                      <ul class="col-sm-6 list-unstyled">
+                        <li>
+                          <p><strong>Featured Artists</strong></p>
+                        </li>
+                        <li><a href="#"> Link Item </a></li>
+                        <li><a href="#"> Link Item </a></li>
+                        <li><a href="#"> Link Item </a></li>
+                        <li><a href="#"> Link Item </a></li>
+                        <li><a href="#"> Link Item </a></li>
+                        <li><a href="#"> Link Item </a></li>
+                      </ul>
+
+                      <ul class="col-sm-6 list-unstyled">
+                        <li>
+                          <p><strong>Artists A-Z</strong></p>
+                        </li>
+                        <li><a href="#"> Link Item </a></li>
+                        <li><a href="#"> Link Item </a></li>
+                        <li><a href="#"> Link Item </a></li>
+                        <li><a href="#"> Link Item </a></li>
+                        <li><a href="#"> Link Item </a></li>
+                        <li><a href="#"> See All</a></li>
+                      </ul>
+                    </div>
+                  </div>
+                </li>
+              </ul>
+            </li>
+            <li class="dropdown"><a href="#" data-toggle="dropdown" class="dropdown-toggle">Venues<b class="caret"></b></a>
+              <ul class="dropdown-menu">
+                <li>
+                  <!-- Content container to add padding -->
+                  <div class="yamm-content">
+                    <div class="row">
+
+                      <ul class="col-md-6 list-unstyled">
+                        <li>
+                          <p><strong>Location</strong></p>
+                        </li>
+                        <li><a href="#">Carlsbad</a></li>
+                        <li><a href="#">Downtown</a></li>
+                        <li><a href="#">Mission Beach</a></li>
+                        <li><a href="#">Normal Heights</a></li>
+                        <li><a href="#">Ocean Beach</a></li>
+                        <li><a href="#">Pacific Beach</a></li>
+                      </ul>
+                      <ul class="col-md-6 list-unstyled">
+                        <li>
+                          <p><strong>Location</strong></p>
+                        </li>
+                        <li><a href="#">Carlsbad</a></li>
+                        <li><a href="#">Downtown</a></li>
+                        <li><a href="#">Mission Beach</a></li>
+                        <li><a href="#">Normal Heights</a></li>
+                        <li><a href="#">Ocean Beach</a></li>
+                        <li><a href="#">Pacific Beach</a></li>
+                      </ul>
+                    </div>
+                  </div>
+                </li>
+              </ul>
+            </li>
+            <li class="dropdown"><a href="#" data-toggle="dropdown" class="dropdown-toggle">Genres<b class="caret"></b></a>
+              <ul class="dropdown-menu">
+                <li>
+                  <!-- Content container to add padding -->
+                  <div class="yamm-content">
+                    <div class="row">
+
+                      <ul class="col-sm-6 list-unstyled">
+                        <li>
+                          <p><strong>Links Title</strong></p>
+                        </li>
+                        <li><a href="#"> Link Item </a></li>
+                        <li><a href="#"> Link Item </a></li>
+                        <li><a href="#"> Link Item </a></li>
+                        <li><a href="#"> Link Item </a></li>
+                        <li><a href="#"> Link Item </a></li>
+                        <li><a href="#"> Link Item </a></li>
+                      </ul>
+                    </div>
+                  </div>
+                </li>
+              </ul>
+            </li>
+            <li><a href="calendar.html">Calendar</a>
+            </li>
+            </ul>
+        </div>
+      </div>
     </div>
 
-    <!-- Collect the nav links, forms, and other content for toggling -->
-    <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
-      <form class="navbar-form navbar-right" role="search">
-        <div class="form-group">
-          <input type="text" class="form-control" placeholder="Search">
-        </div>
-        <button type="submit" class="btn btn-default">Submit</button>
-      </form>
-    </div><!-- /.navbar-collapse -->
-
-    <div class="row">
-                    <div class="col-sm-12">
-                        <ul class="nav navbar-nav">
-        <li class="dropdown">
-          <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-expanded="false">Location <span class="caret"></span></a>
-          <ul class="dropdown-menu" role="menu">
-            <li><a href="#">Action</a></li>
-            <li><a href="#">Another action</a></li>
-            <li><a href="#">Something else here</a></li>
-            <li class="divider"></li>
-            <li><a href="#">Separated link</a></li>
-            <li class="divider"></li>
-            <li><a href="#">One more separated link</a></li>
-          </ul>
-        </li>
-        <li class="dropdown">
-          <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-expanded="false">Venues <span class="caret"></span></a>
-          <ul class="dropdown-menu" role="menu">
-            <li><a href="#">Action</a></li>
-            <li><a href="#">Another action</a></li>
-            <li><a href="#">Something else here</a></li>
-            <li class="divider"></li>
-            <li><a href="#">Separated link</a></li>
-            <li class="divider"></li>
-            <li><a href="#">One more separated link</a></li>
-          </ul>
-        </li>
-        <li class="dropdown">
-          <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-expanded="false">Genres <span class="caret"></span></a>
-          <ul class="dropdown-menu" role="menu">
-            <li><a href="#">Action</a></li>
-            <li><a href="#">Another action</a></li>
-            <li><a href="#">Something else here</a></li>
-            <li class="divider"></li>
-            <li><a href="#">Separated link</a></li>
-            <li class="divider"></li>
-            <li><a href="#">One more separated link</a></li>
-          </ul>
-        </li>
-        <li class="dropdown">
-          <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-expanded="false">Location <span class="caret"></span></a>
-          <ul class="dropdown-menu" role="menu">
-            <li><a href="#">Action</a></li>
-            <li><a href="#">Another action</a></li>
-            <li><a href="#">Something else here</a></li>
-            <li class="divider"></li>
-            <li><a href="#">Separated link</a></li>
-            <li class="divider"></li>
-            <li><a href="#">One more separated link</a></li>
-          </ul>
-        </li>
-        <li><a href="#">Calendar</a></li>
-        <li><a href="#">Reviews or News</a></li>
-      </ul>
-                    </div>
-                </div>
-  </div><!-- /.container-fluid -->
-</nav> 
-
-             
 
 
 
@@ -111,17 +147,82 @@
 
 
 
-<iframe src="https://www.google.com/calendar/embed?showTitle=0&amp;showPrint=0&amp;showTabs=0&amp;showCalendars=0&amp;height=600&amp;wkst=1&amp;bgcolor=%236666cc&amp;src=alrodz018%40gmail.com&amp;color=%232952A3&amp;ctz=America%2FLos_Angeles" style=" border-width:0 " width="1200" height="600" frameborder="0" scrolling="no"></iframe>
+    <div class="container">
+
+      <div class="row row-offcanvas row-offcanvas-right">
+
+        <div class="col-md-8">
+          <p class="pull-right visible-xs">
+            <button type="button" class="btn btn-primary btn-xs" data-toggle="offcanvas">Toggle nav</button>
+          </p>
+
+
+<div class="row">
+<div class="col-md-12">
+<h2>Concert Dates</h2>
+</div>
+</div>
+        <div class="row">
+        
+          <div class="col-md-12">
+
+
+
+
+<iframe src="https://www.google.com/calendar/embed?showTitle=0&amp;showPrint=0&amp;showTabs=0&amp;showCalendars=0&amp;height=600&amp;wkst=1&amp;bgcolor=%236666cc&amp;src=alrodz018%40gmail.com&amp;color=%232952A3&amp;ctz=America%2FLos_Angeles" style=" border-width:0 " width="750" height="600" frameborder="0" scrolling="no"></iframe>
 
 
 
 
 
-  </body>
 
-<!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+
+
+
+
+
+
+
+
+
+
+
+          </div>
+          </div>
+
+
+
+
+
+        </div><!--/.col-xs-12.col-sm-9-->
+
+        <div class="col-md-4 sidebar-offcanvas" id="sidebar" role="navigation">
+        <h2>Concert Feed</h2>
+
+          <div class="list-group">
+            <iframe src="https://www.google.com/calendar/embed?showTitle=0&amp;showPrint=0&amp;showTabs=0&amp;showCalendars=0&amp;mode=AGENDA&amp;height=400&amp;wkst=1&amp;bgcolor=%2366cccc&amp;src=alrodz018%40gmail.com&amp;color=%232952A3&amp;ctz=America%2FLos_Angeles" style=" border-width:0 " width="400" height="400" frameborder="0" scrolling="no"></iframe>
+          </div>
+        </div><!--/.sidebar-offcanvas-->
+      </div><!--/row-->
+
+      <hr>
+
+      <footer>
+        <p>&copy; Company 2014</p>
+      </footer>
+
+    </div><!--/.container-->
+
+
+    <!-- Bootstrap core JavaScript
+    ================================================== -->
+    <!-- Placed at the end of the document so the pages load faster -->
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
-    <!-- Include all compiled plugins (below), or include individual files as needed -->
-    <script src="js/bootstrap.min.js"></script>
+    <script src="./js/bootstrap.min.js"></script>
 
+    <!-- IE10 viewport hack for Surface/desktop Windows 8 bug -->
+    <script src="./js/ie10-viewport-bug-workaround.js"></script>
+
+   
+  </body>
 </html>
