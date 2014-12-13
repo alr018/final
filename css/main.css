@@ -21,6 +21,22 @@
 .artist-image {
   
 }
+.top-event > .events-photos2 {
+  height: 100px;
+  width: 200px;
+}
+.col-md-1 > .events-photos {
+  height: 50px;
+  width: 50px;
+
+}
+.info-text-section {
+  margin-right: 20px;
+}
+
+.info-image-section > img {
+  width: 200px;
+}
 .spotlight-title {
   margin-top: 5px;
   text-align: center;
