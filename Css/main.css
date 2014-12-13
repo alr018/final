@@ -70,3 +70,11 @@ body {
   width: 150px;
   height: 150px;
 }
+
+.col-md-12{
+  margin-left: -15px;
+}
+
+#navbar-collapse-1 {
+  background-color: #FFB984;
+}
