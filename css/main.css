@@ -190,4 +190,10 @@ html {
 
 .footer > .container > .text-muted > a{
   color: lightblue;
+  
+}
+
+.story img{
+  width: 100px;
+  height: 100px;
 }
