@@ -118,3 +118,8 @@ html {
 .event {
   
 }
+
+.story img{
+  width: 200px;
+  height: 200px;
+}
