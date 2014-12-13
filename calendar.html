@@ -8,7 +8,7 @@
     <meta name="author" content="">
     <link rel="icon" href="../../favicon.ico">
 
-    <title>LocalMusic - Calendar</title>
+    <title>SDScene - Calendar</title>
 
     <!-- Bootstrap core CSS -->
     <link href="./css/bootstrap.min.css" rel="stylesheet">
@@ -19,6 +19,8 @@
     <link href="./yamm/yamm.css" rel="stylesheet">
     <link href="./css/offcanvas.css" rel="stylesheet">
     <link href="./css/main.css" rel="stylesheet">
+    <link href="./css/search.css" rel="stylesheet">
+    <link href="./css/breadcrumbs.css" rel="stylesheet">
 
     <!-- Just for debugging purposes. Don't actually copy these 2 lines! -->
     <!--[if lt IE 9]><script src="../../assets/js/ie8-responsive-file-warning.js"></script><![endif]-->
@@ -32,123 +34,52 @@
   </head>
 
   <body>
-   <div class="navbar yamm navbar-default navbar">
-      <div class="container-fluid">
-        <div class="navbar-header">
-          <button type="button" data-toggle="collapse" data-target="#navbar-collapse-1" class="navbar-toggle"><span class="icon-bar"></span><span class="icon-bar"></span><span class="icon-bar"></span></button><a href="./index.html" class="navbar-brand">Local Music</a>
-        </div>
-        <div id="navbar-collapse-1" class="navbar-collapse collapse">
-          <ul class="nav navbar-nav">
-            <!-- Classic list -->
-            <li class="dropdown"><a href="#" data-toggle="dropdown" class="dropdown-toggle">Artists<b class="caret"></b></a>
-              <ul class="dropdown-menu">
-                <li>
-                  <!-- Content container to add padding -->
-                  <div class="yamm-content">
-                    <div class="row">
-
-                      <ul class="col-sm-6 list-unstyled">
-                        <li>
-                          <p><strong>Featured Artists</strong></p>
-                        </li>
-                        <li><a href="./bowen.html">Aaron Bowen</a></li>
-                        <li><a href="#">Karin Carson</a></li>
-                        <li><a href="#">Nards</a></li>
-                        <li><a href="#">71 Fish</a></li>
-                        <li><a href="#">Talented</a></li>
-                        <li><a href="#">Walt Richards</a></li>
-                      </ul>
-
-                      <ul class="col-sm-6 list-unstyled">
-                        <li>
-                          <p><strong>Artists A-Z</strong></p>
-                        </li>
-                        <li><a href="./bowen.html">Aaron Bowen</a></li>
-                        <li><a href="#">Aaron Poehler</a></li>
-                        <li><a href="#">Aaron Zigman</a></li>
-                        <li><a href="#">A Battle to Fight</a></li>
-                        <li><a href="#">Abigail's Attic</a></li>
-                        <li><a href="#"> See All</a></li>
-                      </ul>
-                    </div>
-                  </div>
-                </li>
-              </ul>
-            </li>
-            <li class="dropdown"><a href="#" data-toggle="dropdown" class="dropdown-toggle">Venues<b class="caret"></b></a>
-              <ul class="dropdown-menu">
-                <li>
-                  <!-- Content container to add padding -->
-                  <div class="yamm-content">
-                    <div class="row">
-
-                      <ul class="col-md-6 list-unstyled">
-                        <li>
-                          <p><strong>Location</strong></p>
-                        </li>
-                        <li><a href="#">Carlsbad</a></li>
-                        <li><a href="#">Downtown</a></li>
-                        <li><a href="#">Mission Beach</a></li>
-                        <li><a href="#">Normal Heights</a></li>
-                        <li><a href="#">Ocean Beach</a></li>
-                        <li><a href="#">Pacific Beach</a></li>
-                      </ul>
-                      <ul class="col-md-6 list-unstyled">
-                        <li>
-                          <p><strong>Location</strong></p>
-                        </li>
-                        <li><a href="#">Carlsbad</a></li>
-                        <li><a href="#">Downtown</a></li>
-                        <li><a href="#">Mission Beach</a></li>
-                        <li><a href="#">Normal Heights</a></li>
-                        <li><a href="#">Ocean Beach</a></li>
-                        <li><a href="#">Pacific Beach</a></li>
-                      </ul>
-                    </div>
-                  </div>
-                </li>
-              </ul>
-            </li>
-            <li class="dropdown"><a href="#" data-toggle="dropdown" class="dropdown-toggle">Genres<b class="caret"></b></a>
-              <ul class="dropdown-menu">
-                <li>
-                  <!-- Content container to add padding -->
-                  <div class="yamm-content">
-                    <div class="row">
-
-                      <ul class="col-sm-6 list-unstyled">
-                        <li>
-                          <p><strong>Links Title</strong></p>
-                        </li>
-                        <li><a href="#"> Link Item </a></li>
-                        <li><a href="#"> Link Item </a></li>
-                        <li><a href="#"> Link Item </a></li>
-                        <li><a href="#"> Link Item </a></li>
-                        <li><a href="#"> Link Item </a></li>
-                        <li><a href="#"> Link Item </a></li>
-                      </ul>
-                    </div>
-                  </div>
-                </li>
-              </ul>
-            </li>
-            <li><a href="calendar.html">Calendar</a>
-            </li>
-            </ul>
+    <!-- Top Bar -->
+      <div id="tfheader">
+        <div class="container-fluid">
+          <div class="row">
+            <!-- Title -->
+            <div class="title-wrap">
+              <a href="./index.html" class="title-text">SDScene</a>
+            </div>
+            <!-- HTML for SEARCH BAR -->
+            <form id="tfnewsearch" method="get" action="https://www.google.com/search">
+                <input type="text" id="tfq" class="tftextinput2" name="q" size="21" maxlength="120" value=""><input type="submit" value=">" class="tfbutton2">
+            </form>
+            <div class="tfclear"></div>
+          </div>
         </div>
       </div>
-    </div>
+      <!-- End Top Bar -->
 
 
+    <div class="container-fluid">
+      <!-- Static navbar -->
+      <div class="row">
+        <nav class="navbar navbar-default" role="navigation">
+          <div class="container-fluid">
+              <div id="navbar" class="navbar-collapse collapse">
+              <ul class="nav navbar-nav">
+                <li class="nav-li-final"><a href="./events.html">Events</a></li>
+                <li class="nav-li-final"><a href="./news.html">News</a></li>
+                <li class="nav-li-final"><a href="./venues.html">Venues</a></li>
+                <li class="nav-li-final"><a href="./artists.html">Artists</a></li>
+              </ul>
+            </div><!--/.nav-collapse -->
+          </div><!--/.container-fluid -->
+        </nav>
+      </div>
+      <!-- End Static navbar -->
 
-
-
-
-
-
-
-
-    <div class="container">
+      <!-- Breadcrumbs -->
+      <div class="row">
+        <div class="breadcrumb">
+          <a href="./index.html">Home</a>
+          <a href="./events.html">Events</a>
+          <a href="#" class="active">Calendar</a>
+        </div>
+      </div>
+      <!-- End Breadcrumbs -->
 
       <div class="row row-offcanvas row-offcanvas-right">
 
@@ -205,15 +136,13 @@
           </div>
         </div><!--/.sidebar-offcanvas-->
       </div><!--/row-->
-
-      <hr>
-
-      <footer>
-        <p>&copy; Company 2014</p>
-      </footer>
-
     </div><!--/.container-->
-
+    <!-- Footer -->
+    <footer class="footer">
+      <div class="container">
+        <p class="text-muted">Alfredo Rodriguez, Casey Graff, Melissa Wong. <a href="./design.html">Design Site.</a> &copy; 2014</p>
+      </div>
+    </footer>
 
     <!-- Bootstrap core JavaScript
     ================================================== -->
