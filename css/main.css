@@ -24,11 +24,13 @@
 body {
   margin: 0px 0px 0px 0px;
   padding: 0px 0px 0px 0px;
+  height: 100%;
 }
 
 html {
   margin: 0px 0px 0px 0px;
   padding: 0px 0px 0px 0px;
+  height: 100%;
 }
 
 .title-wrap {
@@ -46,10 +48,6 @@ html {
   margin: 0 0 0 0;
   padding-left: 50px;
   padding-right: 50px;
-}
-
-.no-side-pad {
-
 }
 
 .navbar-final {
@@ -70,6 +68,7 @@ html {
   margin-bottom: 15px;
   text-align: center;
 }
+
 
 .container-fluid {
   padding-left: 50px;
@@ -100,21 +99,95 @@ html {
 }
 
 .regular-content {
-
+  padding-left: 0px;
+  padding-right: 0px;
+  border: 1px black solid;
+  border-radius: 5px;
+  height: 100%;
 }
 
 .content-block {
+  /*border: 1px solid black;*/
+  height: 100%;
 
 }
 
 .content-title {
-
+  text-decoration: underline;
 }
 
 .content-line {
-
+  margin: 0 0 0 0;
 }
 
 .event {
-  
+  margin-top: 5px;
+  margin-bottom: 5px;
+}
+
+.story {
+  margin-top: 10px;
+  margin-bottom: 10px;
+}
+
+.content-image-wrap {
+  float: left;
+}
+
+.content-image-wrap > img{
+  border-radius: 10px;
+}
+
+.content-paragraph {
+  float: left;
+  margin-left: 10px;
+}
+.clear  {
+  clear: both;
+}
+
+.content-block > .story {
+  padding-left: 10px;
+
+}
+.all-content {
+  margin-top: 15px;
+  height: 100%;
+}
+
+.spotlight {
+  border: 1px solid black;
+  border-radius: 5px;
+  height: 100%;
+}
+
+.content-subtitle {
+
+}
+
+.clickable-div {
+  display:block;
+  color: inherit;
+}
+
+.clickable-div:hover {
+  color: inherit;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+.footer {
+  text-align: center;
+  margin-top: 30px;
+  background-color: gray;
+  height: 10px;
+  padding-top: 15px;
+}
+
+.footer > .container > .text-muted {
+  color: white;
+}
+
+.footer > .container > .text-muted > a{
+  color: lightblue;
 }

@@ -42,132 +42,185 @@
     <!-- Top Bar     -->
     <div id="tfheader">
       <div class="container-fluid">
-        <!-- Title -->
-        <div class="title-wrap">
-          <p class="title-text">SDScene</p>
+        <div class="row">
+          <!-- Title -->
+          <div class="title-wrap">
+            <p class="title-text">SDScene</p>
+          </div>
+          <!-- HTML for SEARCH BAR -->
+          <form id="tfnewsearch" method="get" action="https://www.google.com/search">
+              <input type="text" id="tfq" class="tftextinput2" name="q" size="21" maxlength="120" value=""><input type="submit" value=">" class="tfbutton2">
+          </form>
+          <div class="tfclear"></div>
         </div>
-        <!-- HTML for SEARCH BAR -->
-        <form id="tfnewsearch" method="get" action="https://www.google.com/search">
-            <input type="text" id="tfq" class="tftextinput2" name="q" size="21" maxlength="120" value=""><input type="submit" value=">" class="tfbutton2">
-        </form>
-        <div class="tfclear"></div>
       </div>
     </div>
 
     <!-- Body -->
     <div class="container-fluid">
       <!-- Static navbar -->
-      <nav class="navbar navbar-default" role="navigation">
-        <div class="container-fluid">
-            <div id="navbar" class="navbar-collapse collapse">
-            <ul class="nav navbar-nav">
-              <li class="nav-li-final"><a href="#">Events</a></li>
-              <li class="nav-li-final"><a href="#">News</a></li>
-              <li class="nav-li-final"><a href="#">Venues</a></li>
-              <li class="nav-li-final"><a href="#">Artists</a></li>
-            </ul>
-          </div><!--/.nav-collapse -->
-        </div><!--/.container-fluid -->
-      </nav>
+      <div class="row">
+        <nav class="navbar navbar-default" role="navigation">
+          <div class="container-fluid">
+              <div id="navbar" class="navbar-collapse collapse">
+              <ul class="nav navbar-nav">
+                <li class="nav-li-final"><a href="#">Events</a></li>
+                <li class="nav-li-final"><a href="#">News</a></li>
+                <li class="nav-li-final"><a href="#">Venues</a></li>
+                <li class="nav-li-final"><a href="#">Artists</a></li>
+              </ul>
+            </div><!--/.nav-collapse -->
+          </div><!--/.container-fluid -->
+        </nav>
+      </div>
 
       <!-- Carousel -->
-      <div class= "col-md-12">
-        <div id="myCarousel" class="carousel slide" data-interval="4000" data-ride="carousel">
-          <!-- Carousel indicators -->
-          <ol class="carousel-indicators">
-            <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
-            <li data-target="#myCarousel" data-slide-to="1"></li>
-            <li data-target="#myCarousel" data-slide-to="2"></li>
-          </ol>   
-          <!-- Carousel items -->
-          <div class="carousel-inner">
-            <div class="active item">
-              <img src="./images/ryan.png" alt="">
-              <div class="carousel-caption">
-                <h3>Ryan Adams and Jenny Lewis</h3>
-                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+      <div class="row">
+        <div class= "col-md-12">
+          <div id="myCarousel" class="carousel slide" data-interval="4000" data-ride="carousel">
+            <!-- Carousel indicators -->
+            <ol class="carousel-indicators">
+              <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
+              <li data-target="#myCarousel" data-slide-to="1"></li>
+              <li data-target="#myCarousel" data-slide-to="2"></li>
+            </ol>   
+            <!-- Carousel items -->
+            <div class="carousel-inner">
+              <div class="active item">
+                <img src="./images/ryan.png" alt="">
+                <div class="carousel-caption">
+                  <h3>Ryan Adams and Jenny Lewis</h3>
+                  <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+                </div>
               </div>
-            </div>
-            <div class="item">
-              <img src="./images/mystic.jpg" alt="">
-              <div class="carousel-caption">
-                <h3>Mystic Braves</h3>
-                <p>Aliquam sit amet gravida nibh, facilisis gravida odio.</p>
+              <div class="item">
+                <img src="./images/mystic.jpg" alt="">
+                <div class="carousel-caption">
+                  <h3>Mystic Braves</h3>
+                  <p>Aliquam sit amet gravida nibh, facilisis gravida odio.</p>
+                </div>
               </div>
-            </div>
-            <div class="item">
-              <img src="./images/francisco.jpg" alt="">
-              <div class="carousel-caption">
-                <h3>Francisco the Man</h3>
-                <p>Praesent commodo cursus magna, vel scelerisque nisl consectetur.</p>
+              <div class="item">
+                <img src="./images/francisco.jpg" alt="">
+                <div class="carousel-caption">
+                  <h3>Francisco the Man</h3>
+                  <p>Praesent commodo cursus magna, vel scelerisque nisl consectetur.</p>
+                </div>
               </div>
-            </div>
-          </div> <!-- End Carousel items -->
-          <!-- Carousel nav -->
-          <a class="carousel-control left" href="#myCarousel" data-slide="prev">
-              <span class="glyphicon glyphicon-chevron-left"></span>
-          </a>
-          <a class="carousel-control right" href="#myCarousel" data-slide="next">
-              <span class="glyphicon glyphicon-chevron-right"></span>
-          </a>
+            </div> <!-- End Carousel items -->
+            <!-- Carousel nav -->
+            <a class="carousel-control left" href="#myCarousel" data-slide="prev">
+                <span class="glyphicon glyphicon-chevron-left"></span>
+            </a>
+            <a class="carousel-control right" href="#myCarousel" data-slide="next">
+                <span class="glyphicon glyphicon-chevron-right"></span>
+            </a>
+          </div>
         </div>
       </div>
       <!-- End Carousel -->
       <!-- Main Content -->
-      <div class="row">
+      <div class="row all-content">
         <!-- Regular Content -->
         <div class="col-md-9 regular-content">
-          <!-- Events -->
-          <div class="col-md-4 content-block">
-            <!-- Title -->
-            <h3 class="content-title">Upcoming Events</h3>
-            <!-- First Event -->
-            <div class="event">
-              <p class="content-line">The Bosstones Live</p>
-              <p class="content-line">December 11th</p>
-              <p  class="content-line">@ The House of Blues</p>
+          <div class="inner-regular-content">
+            <!-- Events -->
+            <div class="col-md-4 content-block">
+              <!-- Title -->
+              <h3 class="content-title">Upcoming Events</h3>
+              <!-- First Event -->
+              <a href="#test1" class="clickable-div">
+                <div class="event">
+                  <p class="content-line">The Bosstones Live</p>
+                  <p class="content-line">December 11th</p>
+                  <p  class="content-line">@ The House of Blues</p>
+                </div>
+              </a>
+              <hr/>
+              <!-- Second Event -->
+              <a href="#test1" class="clickable-div">
+                <div class="event">
+                  <p class="content-line">The Bosstones Live</p>
+                  <p class="content-line">December 11th</p>
+                  <p  class="content-line">@ The House of Blues</p>
+                </div>
+              </a>
             </div>
-
-            <!-- Second Event -->
-            <div class="event">
-              KROQ's Almost Acoustic Chritmas
-            </div>
-          </div>
-          <!-- End Events -->
-
-          <!-- Top Stories -->
-          <div class="col-md-4 content-block">
-            <!-- Title -->
-            <h3 class="content-title">Top Stories</h3>
-            <!-- First Story -->
-            <div class="story">
-              <img src="http://lorempixel.com/100/100" alt="">
-              <p class="content-line">The Bosstones Live</p>
-              <p class="content-line">December 11th</p>
-              <p  class="content-line">@ The House of Blues</p>              
-            </div>
-
-            <!-- Second Story -->
-            <div class="story">
-              <img src="http://lorempixel.com/100/100" alt="">
-              <p class="content-line">The Bosstones Live</p>
-              <p class="content-line">December 11th</p>
-              <p  class="content-line">@ The House of Blues</p>
-            </div>
-          </div>
-          <!-- End Top Stories -->
-
-          <!-- Hot Artisits -->
-          <div class="col-md-4 content-block">
-          <!-- Title -->
-          <h3 class="content-title">Hot Artists</h3>
-
-          <!-- First Artist -->
-
-          <!-- Second Artist -->
             
+            <!-- End Events -->
+
+            <!-- Top Stories -->
+            <div class="col-md-4 content-block">
+              <!-- Title -->
+              <h3 class="content-title">Top Stories</h3>
+              <!-- First Story -->
+              <a href="#test1" class="clickable-div">
+                <div class="story">
+                  <div class="content-image-wrap">
+                    <img src="http://lorempixel.com/100/100" alt="">
+                  </div>
+                  <div class="content-paragraph">
+                    <p class="content-line">The Bosstones Live</p>
+                    <p class="content-line">December 11th</p>
+                    <p  class="content-line">@ The House of Blues</p>         
+                  </div>     
+                  <div class="clear"></div>
+                </div>
+              </a>
+
+              <!-- Second Story -->
+              <a href="#test1" class="clickable-div">
+                <div class="story">
+                  <div class="content-image-wrap">
+                    <img src="http://lorempixel.com/100/100" alt="">
+                  </div>
+                  <div class="content-paragraph">
+                    <p class="content-line">The Bosstones Live</p>
+                    <p class="content-line">December 11th</p>
+                    <p  class="content-line">@ The House of Blues</p>
+                  </div>
+                  <div class="clear"></div>
+                </div>
+              </a>
+            </div>
+            <!-- End Top Stories -->
+
+            <!-- Hot Artisits -->
+            <div class="col-md-4 content-block">
+            <!-- Title -->
+            <h3 class="content-title">Hot Artists</h3>
+
+              <!-- First Artist -->
+              <a href="#test1" class="clickable-div">
+                <div class="story">
+                  <div class="content-image-wrap">
+                    <img src="http://lorempixel.com/100/100" alt="">
+                  </div>
+                  <div class="content-paragraph">
+                    <p class="content-line">The Bosstones Live</p>
+                    <p class="content-line">December 11th</p>
+                    <p  class="content-line">@ The House of Blues</p>
+                  </div>
+                  <div class="clear"></div>
+                </div>
+              </a>
+              <!-- Second Artist -->
+              <a href="#test1" class="clickable-div">
+                <div class="story">
+                  <div class="content-image-wrap">
+                    <img src="http://lorempixel.com/100/100" alt="">
+                  </div>
+                  <div class="content-paragraph">
+                    <p class="content-line">The Bosstones Live</p>
+                    <p class="content-line">December 11th</p>
+                    <p  class="content-line">@ The House of Blues</p>
+                  </div>
+                  <div class="clear"></div>
+                </div>
+              </a>
+            </div>
+            <!-- End Hot Artists -->
           </div>
-          <!-- End Hot Artists -->
         </div>
         <!-- End Regular Content -->
 
@@ -175,14 +228,20 @@
         <div class="col-md-3 spotlight">
         <!-- Title -->
         <h3 class="content-title">Spotlight</h3>
-          
+          <h4 class="content-subtitle">The Decemberists</h4>
+          <p>Starting on January 11th, The Decemberists broke onto the scene. Frontman Jimmy Whales paired with..</p>
         </div>
         <!-- End Spotlight -->
       </div>
       <!-- End Main Content -->
-
-
     </div><!--/.container-->
+
+    <!-- Footer -->
+    <footer class="footer">
+      <div class="container">
+        <p class="text-muted">Alfredo Rodriguez, Casey Graff, Melissa Wong. <a href="./design.html">Design Site.</a> &copy; 2014</p>
+      </div>
+    </footer>
 
 
     <!-- Bootstrap core JavaScript -->
