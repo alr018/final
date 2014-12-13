@@ -33,10 +33,10 @@ footer {
     left: 0;
   }
 
-  #sidebar{
-    margin-left:20px;
-    padding-left: 20px;
-  }
+#sidebar{
+  padding-left: 100px;
+  margin-left: 100px;
+}
 
   .row-offcanvas-right
   .sidebar-offcanvas {
