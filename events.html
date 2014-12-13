@@ -36,54 +36,290 @@
     <link href="./css/main.css" rel="stylesheet">
     <link href="./css/search.css" rel="stylesheet">
     <link href="./css/breadcrumbs.css" rel="stylesheet">
+    <link href="./css/events.css" rel="stylesheet">
   </head>
 
   <body>
+  <!-- Orange Line -->
+    <div class="top-line"></div>
     <!-- Top Bar -->
     <div id="tfheader">
       <div class="container-fluid">
         <div class="row">
           <!-- Title -->
           <div class="title-wrap">
-            <a href="./index.html" class="title-text">SDScene</a>
+            <a href="./index.html" class="title-text">SD<span class="title2">Scene</span></a>
           </div>
           <!-- HTML for SEARCH BAR -->
           <form id="tfnewsearch" method="get" action="https://www.google.com/search">
-              <input type="text" id="tfq" class="tftextinput2" name="q" size="21" maxlength="120" value=""><input type="submit" value=">" class="tfbutton2">
+              <input type="text" id="tfq" class="tftextinput2" name="q" size="21" maxlength="120" value="Search..."><input type="submit" value=">" class="tfbutton2">
           </form>
           <div class="tfclear"></div>
         </div>
       </div>
     </div>
     <!-- End top bar -->
-      <div class="container-fluid">
-          <!-- Static navbar -->
-          <div class="row">
-            <nav class="navbar navbar-default" role="navigation">
-              <div class="container-fluid">
-                  <div id="navbar" class="navbar-collapse collapse">
-                  <ul class="nav navbar-nav">
-                    <li class="active nav-li-final"><a href="./events.html">Events</a></li>
-                    <li class="nav-li-final"><a href="./news.html">News</a></li>
-                    <li class="nav-li-final"><a href="./venues.html">Venues</a></li>
-                    <li class="nav-li-final"><a href="./artists.html">Artists</a></li>
-                  </ul>
-                </div><!--/.nav-collapse -->
-              </div><!--/.container-fluid -->
-            </nav>
-          </div>
-          <!-- End Static navbar -->
+    <!-- Body -->
+    <div id="wrap" class="container-fluid">
+      <!-- Static navbar -->
+      <div class="row">
+        <nav class="navbar navbar-default" role="navigation">
+          <div class="container-fluid">
+              <div id="navbar" class="navbar-collapse collapse">
+              <ul class="nav navbar-nav">
+                <li class="active nav-li-final"><a href="./events.html">Events</a></li>
+                <li class="nav-li-final"><a href="./news.html">News</a></li>
+                <li class="nav-li-final"><a href="./venues.html">Venues</a></li>
+                <li class="nav-li-final"><a href="./artists.html">Artists</a></li>
+              </ul>
+            </div><!--/.nav-collapse -->
+          </div><!--/.container-fluid -->
+        </nav>
+      </div>
+      <!-- End Static navbar -->
 
-          <!-- Breadcrumbs -->
-          <div class="row">
-            <div class="breadcrumb">
-              <a href="./index.html">Home</a>
-              <a href="#" class="active">Events</a>
+      <!-- Breadcrumbs -->
+      <div class="row">
+        <div class="breadcrumb">
+          <a href="./index.html">Home</a>
+          <a href="#" class="active">Events</a>
+        </div>
+      </div>
+      <!-- End Breadcrumbs -->
+
+      <!-- Start Top Events -->
+      <div class="row top-events-row">
+        <!-- <div class="home-category"><h2 class="content-title">Top Events</h2></div>  -->       
+        <a href="#test1" class="clickable-div">
+          <div class="col-md-3 top-event">
+            <img src="http://lorempixel.com/200/100" alt="">
+            <p class="content-header">The Killers</p>
+            <p class="content-subline">Decemeber 11th</p>
+          </div>
+        </a>
+        <a href="#test1" class="clickable-div">
+          <div class="col-md-3 top-event">        
+            <img src="http://lorempixel.com/200/100" alt="">
+            <p class="content-header">The Killers</p>
+            <p class="content-subline">Decemeber 11th</p>
+          </div>
+        </a>
+        <a href="#test1" class="clickable-div">
+          <div class="col-md-3 top-event">
+            <img src="http://lorempixel.com/200/100" alt="">
+            <p class="content-header">The Killers</p>
+            <p class="content-subline">Decemeber 11th</p>
+          </div>
+        </a>
+        <a href="#test1" class="clickable-div">
+          <div class="col-md-3 top-event">
+            <img src="http://lorempixel.com/200/100" alt="">
+            <p class="content-header">The Killers</p>
+            <p class="content-subline">Decemeber 11th</p>
+          </div>
+        </a>
+      </div>    
+      <!-- End Top Events -->
+
+      <!-- Start main content -->
+      <div class="row spacer">
+        <div class="col-md-9 event-listings">
+          <div class="search-bar">
+            <form method="" action="">
+              <input type="text"class="searchfield1" name="" size="21" maxlength="120" value="Search...">
+              <select class="searchfield2" name="when">
+                <option value="future">All Future Events</option>
+                <option value="this weekend">This Weekend</option>
+                <option value="next 7 days">Next 7 Days</option>
+                <option value="next 30 days">Next 30 Days</option>
+              </select>
+              <input type="submit"class="searchsubmit" name="" size="21" maxlength="120" value="Go">
+          </form>
+          </div>
+          <!-- Event Listings Start -->
+          <div class="panel-group listings" id="accordion" role="tablist" aria-multiselectable="true">
+            <!-- Listing One -->
+            <div class="panel panel-default">
+              <div class="panel-heading" role="tab" id="headingOne">
+                <h4 class="panel-title">
+                  <a data-toggle="collapse" data-parent="#accordion" href="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+                    <div class="container-fluid event-listing">
+                      <div class="row">
+                        <div class="col-md-1">
+                          <img src="http://lorempixel.com/50/50" alt="">
+                        </div>                      
+                        <div class="col-md-10 event-info">
+                          <p class="content-header">The Killers</p>
+                          <p class="content-subline">@ The Melting Pot</p>
+                        </div>
+                        <div class="col-md-1 listing-date">
+                          <div class="listing-date-top">
+                            <p>Monday</p>
+                          </div>
+                          <p>12/7</p>
+                        </div>
+                      </div>
+                    </div>                    
+                  </a>
+                </h4>
+              </div>
+              <div id="collapseOne" class="panel-collapse collapse in" role="tabpanel" aria-labelledby="headingOne">
+                <div class="panel-body">
+                  <div class="container-fluid event-listing">
+                      <div class="row">
+                        <div class="col-md-1">
+                        </div>                      
+                        <div class="col-md-10">
+                          <p class="content-line">A great concert line-up for all of the jazz fans.</p>
+                        </div>
+                      </div>
+                    </div>
+                </div>
+              </div>
+            </div>
+            <!-- Listing Two -->
+            <div class="panel panel-default">
+              <div class="panel-heading" role="tab" id="headingTwo">
+                <h4 class="panel-title">
+                  <a class="collapsed" data-toggle="collapse" data-parent="#accordion" href="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+                    <div class="container-fluid event-listing">
+                      <div class="row">
+                        <div class="col-md-1">
+                          <img src="http://lorempixel.com/50/50" alt="">
+                        </div>                      
+                        <div class="col-md-10 event-info">
+                          <p class="content-header">The Killers</p>
+                          <p class="content-subline">@ The Melting Pot</p>
+                        </div>
+                        <div class="col-md-1 listing-date">
+                          <div class="listing-date-top">
+                            <p>Monday</p>
+                          </div>
+                          <p>12/7</p>
+                        </div>
+                      </div>
+                    </div>
+                  </a>
+                </h4>
+              </div>
+              <div id="collapseTwo" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingTwo">
+                <div class="panel-body">
+                  <div class="container-fluid event-listing">
+                      <div class="row">
+                        <div class="col-md-1">
+                        </div>                      
+                        <div class="col-md-10">
+                          <p class="content-line">A great concert line-up for all of the jazz fans.</p>
+                        </div>
+                      </div>
+                    </div>
+                </div>
+              </div>
+            </div>
+            <!-- Listing Three -->
+            <div class="panel panel-default">
+              <div class="panel-heading" role="tab" id="headingThree">
+                <h4 class="panel-title">
+                  <a class="collapsed" data-toggle="collapse" data-parent="#accordion" href="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+                    <div class="container-fluid event-listing">
+                      <div class="row">
+                        <div class="col-md-1">
+                          <img src="http://lorempixel.com/50/50" alt="">
+                        </div>                      
+                        <div class="col-md-10 event-info">
+                          <p class="content-header">The Killers</p>
+                          <p class="content-subline">@ The Melting Pot</p>
+                        </div>
+                        <div class="col-md-1 listing-date">
+                          <div class="listing-date-top">
+                            <p>Monday</p>
+                          </div>
+                          <p>12/7</p>
+                        </div>
+                      </div>
+                    </div>
+                  </a>
+                </h4>
+              </div>
+              <div id="collapseThree" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingThree">
+                <div class="panel-body">
+                  <div class="container-fluid event-listing">
+                      <div class="row">
+                        <div class="col-md-1">
+                        </div>                      
+                        <div class="col-md-10">
+                          <p class="content-line">A great concert line-up for all of the jazz fans.</p>
+                        </div>
+                      </div>
+                    </div>
+                </div>
+              </div>
+            </div>
+            <!-- Listing Four -->
+            <div class="panel panel-default">
+              <div class="panel-heading" role="tab" id="headingFour">
+                <h4 class="panel-title">
+                  <a class="collapsed" data-toggle="collapse" data-parent="#accordion" href="#collapseFour" aria-expanded="false" aria-controls="collapseThree">
+                    <div class="container-fluid event-listing">
+                      <div class="row">
+                        <div class="col-md-1">
+                          <img src="http://lorempixel.com/50/50" alt="">
+                        </div>                      
+                        <div class="col-md-10 event-info">
+                          <p class="content-header">The Killers</p>
+                          <p class="content-subline">@ The Melting Pot</p>
+                        </div>
+                        <div class="col-md-1 listing-date">
+                          <div class="listing-date-top">
+                            <p>Monday</p>
+                          </div>
+                          <p>12/7</p>
+                        </div>
+                      </div>
+                    </div>
+                  </a>
+                </h4>
+              </div>
+              <div id="collapseFour" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingFour">
+                <div class="panel-body">
+                  <div class="container-fluid event-listing">
+                      <div class="row">
+                        <div class="col-md-1">
+                        </div>                      
+                        <div class="col-md-10">
+                          <p class="content-line">A great concert line-up for all of the jazz fans.</p>
+                        </div>
+                      </div>
+                    </div>
+                </div>
+              </div>
             </div>
           </div>
-      <!-- End Breadcrumbs -->
+          <!-- Event Listings End -->
+        </div>
+        <div class="col-md-3 side-bar">
+          <!-- Start Calendar  -->
+          <div class="spotlight">
+            <!-- Title -->
+            <h3 class="spotlight-title">Calendar<span class="glyphicon glyphicon-calendar spotlight-glyp" aria-hidden="true"></span></h3>
+            <h4 class="spotlight-subtitle">The Decemberists</h4>
+            <p>Starting on January 11th, The Decemberists broke onto the scene. Frontman Jimmy Whales paired with..</p>
+          </div>
+          <!-- End Calendar -->
+          <!-- Spotlight -->
+          <div class="spotlight">
+            <!-- Title -->
+            <h3 class="spotlight-title">Featured Event<span class="glyphicon glyphicon-glass spotlight-glyp" aria-hidden="true"></span></h3>
+            <h4 class="spotlight-subtitle">The Decemberists</h4>
+            <p>Starting on January 11th, The Decemberists broke onto the scene. Frontman Jimmy Whales paired with..</p>
+          </div>
+        <!-- End Spotlight -->
+        </div>
       </div>
-
+      <!-- End main content -->
+      <div id="push"></div>
+    </div>
+    <!-- End Body -->
     <!-- Footer -->
     <footer class="footer">
       <div class="container">

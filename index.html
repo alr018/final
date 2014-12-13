@@ -35,20 +35,23 @@
 
     <link href="./css/main.css" rel="stylesheet">
     <link href="./css/search.css" rel="stylesheet">
+    <link href="./css/index.css" rel="stylesheet">
   </head>
 
   <body>
+    <!-- Orange Line -->
+    <div class="top-line"></div>
     <!-- Top Bar -->
     <div id="tfheader">
       <div class="container-fluid">
         <div class="row">
           <!-- Title -->
           <div class="title-wrap">
-            <a href="./index.html" class="title-text">SDScene</a>
+            <a href="./index.html" class="title-text">SD<span class="title2">Scene</span></a>
           </div>
           <!-- HTML for SEARCH BAR -->
           <form id="tfnewsearch" method="get" action="https://www.google.com/search">
-              <input type="text" id="tfq" class="tftextinput2" name="q" size="21" maxlength="120" value=""><input type="submit" value=">" class="tfbutton2">
+              <input type="text" id="tfq" class="tftextinput2" name="q" size="21" maxlength="120" value="Search..."><input type="submit" value=">" class="tfbutton2">
           </form>
           <div class="tfclear"></div>
         </div>
@@ -56,8 +59,9 @@
     </div>
     <!-- End top bar -->
 
+
     <!-- Body -->
-    <div class="container-fluid">
+    <div id="wrap" class="container-fluid">
       <!-- Static navbar -->
       <div class="row">
         <nav class="navbar navbar-default" role="navigation">
@@ -128,16 +132,15 @@
             <!-- Events -->
             <div class="col-md-4 content-block">
               <!-- Title -->
-              <h3 class="content-title">Upcoming Events</h3>
+              <div class="home-category">
+                <h3 class="content-title">Upcoming Events</h3>
+              </div>
               <!-- First Event -->
               <a href="#test1" class="clickable-div">
                 <div class="story">
-                  <div class="content-image-wrap">
-                    <img src="./images/elephant.jpg" alt="">
-                  </div>
                   <div class="content-paragraph">
-                    <p class="content-line">Black Star Elephant</p>
-                    <p class="content-line">December 25</p>                    
+                    <p class="content-header">Black Star Elephant</p>
+                    <p class="content-subline">December 25, 2014 @ North Star</p>                
                   </div>     
                   <div class="clear"></div>
                 </div>
@@ -145,12 +148,9 @@
               <!-- Second Event -->
               <a href="#test1" class="clickable-div">
                 <div class="story">
-                  <div class="content-image-wrap">
-                    <img src="./images/growlers.jpg" alt="">
-                  </div>
                   <div class="content-paragraph">
-                    <p class="content-line">Growlers at Belly Up</p>
-                    <p class="content-line">December 27</p>                    
+                    <p class="content-header">The Growlers</p>
+                    <p class="content-subline">December 27, 2014 @ Belly Up</p>
                   </div>     
                   <div class="clear"></div>
                 </div>
@@ -161,7 +161,9 @@
             <!-- Top Stories -->
             <div class="col-md-4 content-block">
               <!-- Title -->
-              <h3 class="content-title">Top Stories</h3>
+              <div class="home-category">
+                <h3 class="content-title">Top Stories</h3>
+              </div>
               <!-- First Story -->
               <a href="#test1" class="clickable-div">
                 <div class="story">
@@ -169,9 +171,9 @@
                     <img src="./images/concert1.jpg" alt="">
                   </div>
                   <div class="content-paragraph">
-                    <p class="content-line">Capital Cities' concert review</p>
-                    <p class="content-line">December 23th </p>                    
-                  </div>     
+                    <p class="content-header">Capital Cities' concert review</p>
+                    <p class="content-line"> Lorem ipsum la to fo df ljsdf lknsd flkjdf jl;ksjdffds fafdsfa ds fdsa fd  d dsa fdasf f dsa  </p>                    
+                  </div>      
                   <div class="clear"></div>
                 </div>
               </a>
@@ -183,7 +185,7 @@
                     <img src="./images/julian.jpg" alt="">
                   </div>
                   <div class="content-paragraph">
-                    <p class="content-line">Artpower! Julian Page<br/>
+                    <p class="content-header">Artpower! Julian Page<br/>
                   </div>
                   <div class="clear"></div>
                 </div>
@@ -194,7 +196,9 @@
             <!-- Hot Artisits -->
             <div class="col-md-4 content-block">
             <!-- Title -->
-            <h3 class="content-title">Hot Artists</h3>
+            <div class="home-category">
+              <h3 class="content-title">Hot Artists</h3>
+            </div>
 
               <!-- First Artist -->
               <a href="#test1" class="clickable-div">
@@ -203,7 +207,7 @@
                     <img src="./images/fish.jpg" alt="">
                   </div>
                   <div class="content-paragraph">
-                    <p class="content-line">71 Fish</p>
+                    <p class="content-header">71 Fish</p>
                   </div>
                   <div class="clear"></div>
                 </div>
@@ -215,7 +219,7 @@
                     <img src="./images/ad.jpg" alt="">
                   </div>
                   <div class="content-paragraph">
-                    <p class="content-line">Ad Seg</p>
+                    <p class="content-header">Ad Seg</p>
                   </div>
                   <div class="clear"></div>
                 </div>
@@ -229,15 +233,22 @@
         <!-- Spotlight -->
         <div class="col-md-3 spotlight">
         <!-- Title -->
-        <h3 class="content-title">Spotlight</h3>
-          <h4 class="content-subtitle">The Decemberists</h4>
-          <p>Starting on January 11th, The Decemberists broke onto the scene. Frontman Jimmy Whales paired with..</p>
+        <div>
+          <h3 class="spotlight-title">Artist Spotlight<span class="glyphicon glyphicon-search spotlight-glyp" aria-hidden="true"></span></h3>
+          
         </div>
+        <h4 class="spotlight-subtitle">The Decemberists</h4>
+        <img class="spotlight-image" src="http://lorempixel.com/325/200" alt="">
+        <p>Starting on January 11th, The Decemberists broke onto the scene. Frontman Jimmy Whales paired with Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quam unde numquam eius, a optio placeat doloremque assumenda expedita, ipsa itaque dolores dicta repellat consectetur pariatur tenetur neque illum. Debitis, recusandae.</p>
+          
+         <a href="#test3">Read more...</a>
+      </div>
         <!-- End Spotlight -->
       </div>
       <!-- End Main Content -->
+      <div id="push"></div>
     </div><!--/.container-->
-
+    
     <!-- Footer -->
     <footer class="footer">
       <div class="container">
