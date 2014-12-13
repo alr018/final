@@ -50,3 +50,8 @@ body {
 
 
 }
+
+.navbar {
+  background-color: #FFB984;
+  /*color: #FFFADA;*/  /*Used to change color of titles of drop down menus, ie Featured Artists.*/
+}
