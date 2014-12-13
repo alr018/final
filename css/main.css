@@ -30,8 +30,25 @@
   width: 50px;
 
 }
+.clickable-div > .artist-finale > img{
+  width: 678px;
+  height: 379px;
+}
 .info-text-section {
   margin-right: 20px;
+}
+.top-news >.news-image-wrap {
+  height: 180px;
+  width: 380px;
+}
+.artists-image-final {
+  width: 70px;
+  height: 70px;
+}
+
+.news-line > .col-md-2 > img {
+  height: 70px;
+  width: 70px;
 }
 
 .info-image-section > img {
@@ -74,6 +91,7 @@
 .spotlight-image {
   border: outset 2px #262626;
   margin-bottom: 10px;
+  width: 300px;
 }
 .spotlight-space {
   text-decoration: none;
