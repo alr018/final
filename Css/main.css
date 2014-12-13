@@ -56,6 +56,12 @@ body {
   /*color: #FFFADA;*/  /*Used to change color of titles of drop down menus, ie Featured Artists.*/
 }
 
+.topic{
+
+  margin-top: 40px;
+  margin-bottom: 20px;
+}
+
 .col-md-3 img{
   width: 150px;
   height: 150px;
